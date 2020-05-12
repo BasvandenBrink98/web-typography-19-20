@@ -9,6 +9,7 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+	color: #FFFFFF;
 }
 #closed-captions .on {
 	opacity: 1;
@@ -21,10 +22,51 @@ Feel free to adjust the defaults to your needs.
 	font-style: italic;
 }
 
+/*
+body style
+*/
+
+body{
+	background-color: #010107;
+}
+
+/* @keyframes effect1 {
+	0%   {background: radial-gradient(#010107, #010107);}
+	80%  {background: radial-gradient(#010107, #7a7a7a);}
+	100% {background: radial-gradient(#010107, #cecece);}
+
+} */
+@keyframes effect1 {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+
+}
+
+.sound9{
+	/* animation: effect1 30s ease-in-out; */
+	background: radial-gradient(#010107, #cecece);
+	background-repeat: no-repeat;
+	opacity: 0;
+	animation: effect1 3s;
+	transition-delay: 3s;
+}
+
+/* .sound9:after{
+	background: radial-gradient(#010107, #cecece);
+	z-index: 0;
+	opacity: 1;
+	transition: opacity 1s;
+	transition-delay: 5s;
+} */
+
+/* .sound9:before:active{
+	opacity: 1;
+} */
+
 /* **********************************************
-The first paragraph, with extended timing for 
+The first paragraph, with extended timing for
 	all siblings. Basically what it does is that
-	it shows the text after a delay, which 
+	it shows the text after a delay, which
 	corresponds with the time that the word is
 	spoken.
 You probably want to change the styling.
