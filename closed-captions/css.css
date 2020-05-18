@@ -8,7 +8,13 @@ Feel free to adjust the defaults to your needs.
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
+	font-size: 1.5em;
 	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
 	color: #FFFFFF;
 }
 #closed-captions .on {
@@ -25,6 +31,10 @@ Feel free to adjust the defaults to your needs.
 /*
 body style
 */
+#video-placeholder{
+	z-index: 2;
+}
+
 
 body{
 	background-color: #010107;
@@ -37,31 +47,21 @@ body{
 
 } */
 @keyframes effect1 {
-	0%   {opacity: 0;}
-	100% {opacity: 1;}
+	0%	 {background: radial-gradient(circle, rgba(1,1,7,0) 0%, rgba(206,206,206,1) 100%);}
+	50%  {background: radial-gradient(circle, rgba(1,1,7,0) 0%, rgba(206,206,206,1) 50%);}
+	100% {background: radial-gradient(circle, rgba(1,1,7,0) 0%, rgba(206,206,206,1) 12%);}
+
 
 }
 
 .sound9{
-	/* animation: effect1 30s ease-in-out; */
-	background: radial-gradient(#010107, #cecece);
-	background-repeat: no-repeat;
-	opacity: 0;
-	animation: effect1 3s;
-	transition-delay: 3s;
+	background: #010107;
+	/* background-repeat: no-repeat; */
+
+	animation: effect1 10s ease-in-out;
 }
 
-/* .sound9:after{
-	background: radial-gradient(#010107, #cecece);
-	z-index: 0;
-	opacity: 1;
-	transition: opacity 1s;
-	transition-delay: 5s;
-} */
 
-/* .sound9:before:active{
-	opacity: 1;
-} */
 
 /* **********************************************
 The first paragraph, with extended timing for
